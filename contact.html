@@ -191,18 +191,21 @@
     <script>
         // Обработка формы
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const question = document.getElementById('question').value;
-            
-            // В реальном приложении здесь был бы AJAX-запрос к серверу
-            alert(`Спасибо, ${name || 'друг'}! Твой вопрос отправлен. Мы свяжемся с тобой в ближайшее время.`);
-            
-            // Очистка формы
-            document.getElementById('contactForm').reset();
-        });
+    e.preventDefault();
+    
+    // Цель Яндекс.Метрики: отправка формы
+    if (typeof ym !== 'undefined') {
+        ym(113183637, 'reachGoal', 'form_submit');
+    }
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const question = document.getElementById('question').value;
+    
+    alert(`Спасибо, ${name || 'друг'}! Твой вопрос отправлен. Мы свяжемся с тобой в ближайшее время.`);
+    
+    document.getElementById('contactForm').reset();
+});
     </script>
 </body>
 </html>
