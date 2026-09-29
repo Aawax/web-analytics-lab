@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессия | Разработчик веб и мультимедийных приложений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Чёткая профессия</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profession.html">Профессия</a></li>
+                    <li><a href="process.html">Процесс</a></li>
+                    <li><a href="tech.html">Технологии</a></li>
+                    <li><a href="career.html">Карьера</a></li>
+                    <li><a href="quiz.html">Квиз</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Страница профессии -->
+    <section class="page active">
+        <div class="page-header">
+            <div class="container">
+                <h1>Кто такой разработчик веб и мультимедийных приложений?</h1>
+                <p>Творческий технарь, который превращает идеи в цифровую реальность</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Суть профессии</h3>
+                    <p>Разработчик веб и мультимедийных приложений — это специалист, который создает сайты, веб-сервисы, онлайн-платформы и интерактивные приложения. Он сочетает в себе творческое мышление дизайнера и логику программиста.</p>
+                    
+                    <h3>Что именно он делает?</h3>
+                    
+                    <div class="card-container" style="margin-top: 30px;">
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-paint-brush" style="font-size: 3rem; color: var(--secondary);"></i>
+                                </div>
+                                <h3>Создает интерфейсы</h3>
+                                <p>Разрабатывает внешний вид сайтов и приложений, чтобы они были красивыми, современными и удобными для пользователей.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-code" style="font-size: 3rem; color: var(--accent);"></i>
+                                </div>
+                                <h3>Пишет код</h3>
+                                <p>Программирует функционал: кнопки, формы, анимации, взаимодействие с сервером, обработку данных.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <div style="text-align: center; margin-bottom: 20px;">
+                                    <i class="fas fa-mobile-alt" style="font-size: 3rem; color: var(--success);"></i>
+                                </div>
+                                <h3>Адаптирует под устройства</h3>
+                                <p>Делает так, чтобы сайты одинаково хорошо работали на компьютерах, планшетах и смартфонах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Какие проекты можно создавать?</h3>
+                    <div class="project-carousel" id="projectCarousel">
+                        <div class="project-slide active" style="background-image: url('imges/Screenshot_4.png');">
+                            <div class="project-info">
+                                <h3>Лендинги</h3>
+                                <p>Одностраничные сайты для презентации продукта или услуги. Быстро, красиво, эффективно.</p>
+                            </div>
+                        </div>
+                        <div class="project-slide" style="background-image: url('imges/Screenshot_2.png');">
+                            <div class="project-info">
+                                <h3>Интернет-магазины</h3>
+                                <p>Полноценные платформы для онлайн-торговли с каталогом, корзиной и оплатой.</p>
+                            </div>
+                        </div>
+                        <div class="project-slide" style="background-image: url('imges/Screenshot_3.png');">
+                            <div class="project-info">
+                                <h3>Корпоративные сайты</h3>
+                                <p>Сайты компаний с информацией о деятельности, услугах, контактах.</p>
+                            </div>
+                        </div>
+                        <div class="project-slide" style="background-image: url('imges/Screenshot_1.png');">
+                            <div class="project-info">
+                                <h3>Веб-приложения</h3>
+                                <p>Сложные системы типа онлайн-банков, соцсетей, образовательных платформ.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn" onclick="prevProject()"><i class="fas fa-chevron-left"></i></button>
+                            <button class="carousel-btn" onclick="nextProject()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <h3>Мифы и правда о профессии</h3>
+                    <div class="card-container" style="margin-top: 30px;">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Миф: Нужно быть гением в математике</h4>
+                                <p><strong>Правда:</strong> Для веб-разработки достаточно школьной математики. Гораздо важнее логическое мышление и внимание к деталям.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Миф: Это очень скучная работа</h4>
+                                <p><strong>Правда:</strong> Каждый проект — новая задача. Ты постоянно учишься, пробуешь новые технологии и видишь результат своей работы.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Миф: Работа только для мужчин</h4>
+                                <p><strong>Правда:</strong> В IT все больше девушек-разработчиц. Например, у Facebook и Google около 25% женщин в технических отделах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Разработчик веб и мультимедийных приложений</h3>
+                    <p>Презентация профессии для школьников. Сайт создан для рассказа о профессии и возможностях обучения в КИТП ВЛГУ.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Разделы сайта</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="profession.html">О профессии</a></li>
+                        <li><a href="process.html">Процесс разработки</a></li>
+                        <li><a href="tech.html">Технологии</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Полезные ресурсы</h3>
+                    <ul>
+                        <li><a href="quiz.html">Квиз по профессии</a></li>
+                        <li><a href="contact.html">Поступление в КИТП</a></li>
+                        <li><a href="https://vlsu.ru" target="_blank">Официальный сайт ВЛГУ</a></li>
+                        <li><a href="https://htmlacademy.ru" target="_blank">Бесплатные курсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Сайт про "Разработчика веб и мультимедийных приложений"</p>
+                <p>Все изображения взяты из открытых источников. Сайт создан для образовательных целей. Ссылки работают, а КОНТАКТЫ НЕ НАСТОЯЩИЕ!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Карусель проектов
+        let currentProject = 0;
+        const projects = document.querySelectorAll('.project-slide');
+        
+        function showProject(index) {
+            projects.forEach(project => project.classList.remove('active'));
+            projects[index].classList.add('active');
+            currentProject = index;
+        }
+        
+        function nextProject() {
+            let nextIndex = currentProject + 1;
+            if (nextIndex >= projects.length) nextIndex = 0;
+            showProject(nextIndex);
+        }
+        
+        function prevProject() {
+            let prevIndex = currentProject - 1;
+            if (prevIndex < 0) prevIndex = projects.length - 1;
+            showProject(prevIndex);
+        }
+        
+        // Автопереключение карусели
+        setInterval(nextProject, 5000);
+    </script>
+</body>
+</html>

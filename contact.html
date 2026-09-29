@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Разработчик веб и мультимедийных приложений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Чёткая профессия</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profession.html">Профессия</a></li>
+                    <li><a href="process.html">Процесс</a></li>
+                    <li><a href="tech.html">Технологии</a></li>
+                    <li><a href="career.html">Карьера</a></li>
+                    <li><a href="quiz.html">Квиз</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контакты -->
+    <section class="page active">
+        <div class="page-header">
+            <div class="container">
+                <h1>Начни свой путь в IT</h1>
+                <p>Поступление в КИТП ВЛГУ на специальность разработчика</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Как поступить в КИТП ВЛГУ?</h3>
+                        
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h4>Выбери специальность</h4>
+                                <p><strong>09.02.07</strong> "Разработчик веб и мультимедийных приложений"</p>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h4>Подготовь документы</h4>
+                                <p>Аттестат, паспорт, фото 3×4, медицинская справка</p>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h4>Подай заявление</h4>
+                                <p>Онлайн через Госуслуги или очно в приемной комиссии</p>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <h4>Жди зачисления</h4>
+                                <p>Конкурс по среднему баллу аттестата</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Важно:</strong> для поступления важны оценки по <strong>математике, информатике и русскому языку</strong>.</p>
+                        
+                        <h3>Контакты</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Владимир</p>
+                        <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (902) 885-25-40</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> pochta@email.com</p>
+                        <p><i class="fas fa-globe"></i> <strong>Сайт:</strong> <a href="https://www.vlsu.ru/" target="_blank">vlsu.ru</a></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Что даст тебе обучение в КИТП?</h3>
+                        <ul>
+                            <li>Практические навыки с первого курса</li>
+                            <li>Диплом государственного образца</li>
+                            <li>Возможность продолжить обучение в ВЛГУ</li>
+                            <li>Портфолио реальных проектов</li>
+                            <li>Опыт командной работы</li>
+                            <li>Подготовку к трудоустройству</li>
+                        </ul>
+                        
+                        <div class="contact-form" style="margin-top: 30px; box-shadow: none; padding: 0;">
+                            <h3>Есть вопросы? Пиши!</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Твое имя" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email для ответа" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <textarea id="question" class="form-control" placeholder="Твой вопрос" required></textarea>
+                                </div>
+                                
+                                <div style="text-align: center;">
+                                    <button type="submit" class="btn">Отправить вопрос</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background-color: white; border-radius: 10px;">
+                <h3>Начни изучать веб-разработку уже сейчас!</h3>
+                <p>Пока готовишь документы для поступления, можешь начать с бесплатных ресурсов:</p>
+                <div class="tech-stack" style="justify-content: center; margin-top: 20px;">
+                    <a href="https://htmlacademy.ru" target="_blank" class="tech-item html" style="text-decoration: none;">HTML Academy</a>
+                    <a href="https://www.freecodecamp.org" target="_blank" class="tech-item css" style="text-decoration: none;">freeCodeCamp</a>
+                    <a href="https://learn.javascript.ru" target="_blank" class="tech-item js" style="text-decoration: none;">Learn JavaScript</a>
+                    <a href="https://www.codecademy.com" target="_blank" class="tech-item python" style="text-decoration: none;">Codecademy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Разработчик веб и мультимедийных приложений</h3>
+                    <p>Презентация профессии для школьников. Сайт создан для рассказа о профессии и возможностях обучения в КИТП ВЛГУ.</p>
+
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Разделы сайта</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="profession.html">О профессии</a></li>
+                        <li><a href="process.html">Процесс разработки</a></li>
+                        <li><a href="tech.html">Технологии</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Полезные ресурсы</h3>
+                    <ul>
+                        <li><a href="quiz.html">Квиз по профессии</a></li>
+                        <li><a href="contact.html">Поступление в КИТП</a></li>
+                        <li><a href="https://vlsu.ru" target="_blank">Официальный сайт ВЛГУ</a></li>
+                        <li><a href="https://htmlacademy.ru" target="_blank">Бесплатные курсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Сайт про "Разработчика веб и мультимедийных приложений"</p>
+                <p>Все изображения взяты из открытых источников. Сайт создан для образовательных целей. Ссылки работают, а КОНТАКТЫ НЕ НАСТОЯЩИЕ!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Обработка формы
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const question = document.getElementById('question').value;
+            
+            // В реальном приложении здесь был бы AJAX-запрос к серверу
+            alert(`Спасибо, ${name || 'друг'}! Твой вопрос отправлен. Мы свяжемся с тобой в ближайшее время.`);
+            
+            // Очистка формы
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>

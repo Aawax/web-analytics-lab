@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз | Разработчик веб и мультимедийных приложений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Чёткая профессия</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profession.html">Профессия</a></li>
+                    <li><a href="process.html">Процесс</a></li>
+                    <li><a href="tech.html">Технологии</a></li>
+                    <li><a href="career.html">Карьера</a></li>
+                    <li><a href="quiz.html">Квиз</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Квиз -->
+    <section class="page active">
+        <div class="page-header">
+            <div class="container">
+                <h1>Квиз: Твой путь в IT</h1>
+                <p>Узнай, какое направление веб-разработки тебе подходит</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="quiz-container">
+                <div id="quizContent">
+                    <div id="question1" class="quiz-question active-question">
+                        <h3>Вопрос 1: Какой тип задач тебе интереснее?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" onclick="selectAnswer(1, 'a')">
+                                Создавать красивые интерфейсы, чтобы сайты выглядели современно и стильно
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(1, 'b')">
+                                Решать логические задачи, оптимизировать процессы, работать с данными
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(1, 'c')">
+                                Участвовать во всем процессе — от дизайна до запуска проекта
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(1, 'd')">
+                                Создавать анимации, интерактивные элементы, нестандартные визуальные эффекты
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question2" class="quiz-question hidden">
+                        <h3>Вопрос 2: Какой проект ты бы хотел создать в первую очередь?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" onclick="selectAnswer(2, 'a')">
+                                Сайт-портфолио для дизайнера или фотографа
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(2, 'b')">
+                                Систему учета для небольшого бизнеса
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(2, 'c')">
+                                Полноценный интернет-магазин с корзиной и оплатой
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(2, 'd')">
+                                Интерактивную игру или арт-проект в браузере
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question3" class="quiz-question hidden">
+                        <h3>Вопрос 3: Как ты предпочитаешь учиться?</h3>
+                        <div class="quiz-options">
+                            <div class="quiz-option" onclick="selectAnswer(3, 'a')">
+                                Смотреть видеоуроки и сразу пробовать на практике
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(3, 'b')">
+                                Читать документацию и разбираться в теории
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(3, 'c')">
+                                Работать над реальным проектом с наставником
+                            </div>
+                            <div class="quiz-option" onclick="selectAnswer(3, 'd')">
+                                Экспериментировать и придумывать что-то новое
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="result" class="quiz-result hidden">
+                        <h3>Твой результат:</h3>
+                        <div id="resultContent"></div>
+                        <button class="btn" onclick="restartQuiz()" style="margin-top: 20px;">Пройти еще раз</button>
+                    </div>
+                    
+                    <div class="quiz-navigation">
+                        <button class="btn btn-light" id="prevBtn" onclick="prevQuestion()" disabled>Назад</button>
+                        <button class="btn" id="nextBtn" onclick="nextQuestion()">Далее</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <h3>Готов начать обучение?</h3>
+                <p>Специальность 09.02.07 "Разработчик веб и мультимедийных приложений" в КИТП ВЛГУ</p>
+                <a href="contact.html" class="btn btn-accent">Узнать о поступлении</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Разработчик веб и мультимедийных приложений</h3>
+                    <p>Презентация профессии для школьников. Сайт создан для рассказа о профессии и возможностях обучения в КИТП ВЛГУ.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Разделы сайта</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="profession.html">О профессии</a></li>
+                        <li><a href="process.html">Процесс разработки</a></li>
+                        <li><a href="tech.html">Технологии</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Полезные ресурсы</h3>
+                    <ul>
+                        <li><a href="quiz.html">Квиз по профессии</a></li>
+                        <li><a href="contact.html">Поступление в КИТП</a></li>
+                        <li><a href="https://vlsu.ru" target="_blank">Официальный сайт ВЛГУ</a></li>
+                        <li><a href="https://htmlacademy.ru" target="_blank">Бесплатные курсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Сайт про "Разработчика веб и мультимедийных приложений"</p>
+                <p>Все изображения взяты из открытых источников. Сайт создан для образовательных целей. Ссылки работают, а КОНТАКТЫ НЕ НАСТОЯЩИЕ!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Квиз
+        let currentQuestion = 1;
+        const answers = {};
+        
+        function selectAnswer(questionId, answer) {
+            // Убрать выделение со всех вариантов ответа
+            const options = document.querySelectorAll(`#question${questionId} .quiz-option`);
+            options.forEach(option => {
+                option.classList.remove('selected');
+            });
+            
+            // Выделить выбранный вариант
+            event.target.classList.add('selected');
+            
+            // Сохранить ответ
+            answers[questionId] = answer;
+        }
+        
+        function nextQuestion() {
+            // Проверить, выбран ли ответ
+            if (!answers[currentQuestion]) {
+                alert('Пожалуйста, выберите ответ!');
+                return;
+            }
+            
+            // Скрыть текущий вопрос
+            document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+            
+            // Показать следующий вопрос или результат
+            currentQuestion++;
+            
+            if (currentQuestion <= 3) {
+                document.getElementById(`question${currentQuestion}`).classList.remove('hidden');
+                document.getElementById('prevBtn').disabled = false;
+            } else {
+                showResult();
+                document.getElementById('nextBtn').classList.add('hidden');
+                document.getElementById('prevBtn').classList.add('hidden');
+            }
+        }
+        
+        function prevQuestion() {
+            // Скрыть текущий вопрос
+            document.getElementById(`question${currentQuestion}`).classList.add('hidden');
+            
+            // Показать предыдущий вопрос
+            currentQuestion--;
+            
+            if (currentQuestion === 1) {
+                document.getElementById('prevBtn').disabled = true;
+            }
+            
+            document.getElementById(`question${currentQuestion}`).classList.remove('hidden');
+        }
+        
+        function showResult() {
+            // Анализ ответов
+            let frontendCount = 0;
+            let backendCount = 0;
+            let fullstackCount = 0;
+            let multimediaCount = 0;
+            
+            // Подсчет результатов
+            for (let question in answers) {
+                const answer = answers[question];
+                
+                if (answer === 'a') frontendCount++;
+                else if (answer === 'b') backendCount++;
+                else if (answer === 'c') fullstackCount++;
+                else if (answer === 'd') multimediaCount++;
+            }
+            
+            // Определение результата
+            let resultTitle, resultText, resultType;
+            
+            if (frontendCount >= 2) {
+                resultTitle = "Ты — Frontend-разработчик!";
+                resultText = "Тебе нравится создавать интерфейсы, с которыми взаимодействуют пользователи. Ты превращаешь дизайн в работающий сайт, заботишься о красоте и удобстве. Твои основные инструменты: HTML, CSS, JavaScript и современные фреймворки.";
+                resultType = "frontend";
+            } else if (backendCount >= 2) {
+                resultTitle = "Ты — Backend-разработчик!";
+                resultText = "Тебя интересует логика работы приложений, обработка данных, оптимизация. Ты работаешь с серверами, базами данных и API. Твои технологии: Python, PHP, Java, Node.js и системы управления базами данных.";
+                resultType = "backend";
+            } else if (fullstackCount >= 2) {
+                resultTitle = "Ты — Fullstack-разработчик!";
+                resultText = "Ты универсальный специалист, который может создавать приложения от начала до конца. От дизайна интерфейса до серверной логики — ты управляешь всем процессом. Это самый востребованный и высокооплачиваемый профиль!";
+                resultType = "fullstack";
+            } else {
+                resultTitle = "Ты — Мультимедийный разработчик!";
+                resultText = "Тебя привлекают анимации, интерактив, нестандартные визуальные решения. Ты создаешь не просто сайты, а цифровые произведения искусства. Твои инструменты: Canvas, WebGL, библиотеки для анимации и интерактивности.";
+                resultType = "multimedia";
+            }
+            
+            // Отображение результата
+            const resultContent = document.getElementById('resultContent');
+            resultContent.innerHTML = `
+                <h3 style="color: var(--secondary);">${resultTitle}</h3>
+                <p>${resultText}</p>
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h4>Что тебе изучать в первую очередь:</h4>
+                    <ul>
+                        ${resultType === 'frontend' ? '<li>HTML5 и CSS3 (верстка)</li><li>JavaScript (основы программирования)</li><li>React или Vue.js (фреймворки)</li><li>Адаптивная верстка</li><li>Figma (работа с дизайном)</li>' : ''}
+                        ${resultType === 'backend' ? '<li>Python или PHP (основы)</li><li>Базы данных (SQL)</li><li>Node.js (JavaScript на сервере)</li><li>REST API</li><li>Основы безопасности</li>' : ''}
+                        ${resultType === 'fullstack' ? '<li>HTML/CSS/JavaScript (база)</li><li>React или Vue.js (фронтенд)</li><li>Node.js или Python (бэкенд)</li><li>Базы данных</li><li>Git (система контроля версий)</li>' : ''}
+                        ${resultType === 'multimedia' ? '<li>Продвинутый CSS (анимации)</li><li>Canvas API</li><li>WebGL основы</li><li>Библиотеки типа Three.js</li><li>Интерактивный дизайн</li>' : ''}
+                    </ul>
+                </div>
+                <div style="margin-top: 20px;">
+                    <p>Это направление ты сможешь изучать в КИТП ВЛГУ на специальности <strong>"Разработчик веб и мультимедийных приложений"</strong>.</p>
+                    <a href="contact.html" class="btn">Узнать о поступлении</a>
+                </div>
+            `;
+            
+            // Показать блок с результатом
+            document.getElementById('result').classList.remove('hidden');
+        }
+        
+        function restartQuiz() {
+            // Сброс состояния квиза
+            currentQuestion = 1;
+            for (let key in answers) {
+                delete answers[key];
+            }
+            
+            // Скрыть все вопросы, кроме первого
+            document.querySelectorAll('.quiz-question').forEach((question, index) => {
+                if (index === 0) {
+                    question.classList.remove('hidden');
+                } else {
+                    question.classList.add('hidden');
+                }
+            });
+            
+            // Скрыть результат
+            document.getElementById('result').classList.add('hidden');
+            
+            // Показать кнопки навигации
+            document.getElementById('nextBtn').classList.remove('hidden');
+            document.getElementById('prevBtn').classList.remove('hidden');
+            document.getElementById('prevBtn').disabled = true;
+            
+            // Снять выделение с ответов
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+        }
+    </script>
+</body>
+</html>

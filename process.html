@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процесс разработки | Разработчик веб и мультимедийных приложений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Чёткая профессия</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profession.html">Профессия</a></li>
+                    <li><a href="process.html">Процесс</a></li>
+                    <li><a href="tech.html">Технологии</a></li>
+                    <li><a href="career.html">Карьера</a></li>
+                    <li><a href="quiz.html">Квиз</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Процесс разработки -->
+    <section class="page active">
+        <div class="page-header">
+            <div class="container">
+                <h1>Как создают сайты: от идеи до запуска</h1>
+                <p>Полный цикл разработки веб-приложения в 7 шагов</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <p>Создание сайта — это не просто написание кода. Это процесс, который включает планирование, дизайн, программирование и тестирование. Давайте разберем каждый этап.</p>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Анализ и планирование</h4>
+                            <p>Определяем цели сайта, целевую аудиторию, функциональные требования. Создаем техническое задание.</p>
+                            <i class="fas fa-clipboard-list" style="font-size: 2rem; color: var(--secondary); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Прототипирование</h4>
+                            <p>Создаем "скелет" сайта — схему расположения элементов без дизайна. Определяем пользовательские сценарии.</p>
+                            <i class="fas fa-sitemap" style="font-size: 2rem; color: var(--orange); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Дизайн</h4>
+                            <p>Разрабатываем визуальную концепцию: цвета, шрифты, изображения, анимации. Создаем макеты всех страниц.</p>
+                            <i class="fas fa-palette" style="font-size: 2rem; color: var(--purple); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Фронтенд-разработка</h4>
+                            <p>Верстаем макеты: превращаем дизайн в HTML/CSS код. Добавляем интерактивность с помощью JavaScript.</p>
+                            <i class="fas fa-laptop" style="font-size: 2rem; color: var(--success); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h4>Бэкенд-разработка</h4>
+                            <p>Программируем серверную часть: логику работы, базы данных, интеграции со сторонними сервисами.</p>
+                            <i class="fas fa-server" style="font-size: 2rem; color: var(--accent); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <h4>Тестирование</h4>
+                            <p>Проверяем работу на разных устройствах и браузерах, ищем и исправляем ошибки, оптимизируем производительность.</p>
+                            <i class="fas fa-bug" style="font-size: 2rem; color: var(--orange); margin-top: 15px;"></i>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <h4>Запуск и поддержка</h4>
+                            <p>Размещаем сайт на хостинге, подключаем домен. После запуска обновляем контент и исправляем возникающие проблемы.</p>
+                            <i class="fas fa-rocket" style="font-size: 2rem; color: var(--secondary); margin-top: 15px;"></i>
+                        </div>
+                    </div>
+                    
+                    <h3>Пример: как код превращается в интерфейс</h3>
+                    <div style="background-color: #2c3e50; border-radius: 8px; padding: 20px; margin-top: 30px; color: white;">
+                        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                            <div style="width: 48%; min-width: 300px;">
+                                <h4 style="color: white;">HTML + CSS код</h4>
+                                <pre style="background-color: #34495e; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 0.9rem;">
+<code style="color: #ecf0f1;">
+&lt;style&gt;
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+&lt;/style&gt;
+    &lt;div class="card"&gt;
+  &lt;h3&gt;Моя первая карточка&lt;/h3&gt;
+  &lt;p&gt;Это пример того, как работает верстка.&lt;/p&gt;
+  &lt;button class="btn"&gt;Нажми меня&lt;/button&gt;
+&lt;/div&gt;
+</code>
+                                </pre>
+                            </div>
+                            
+                            <div style="width: 48%; min-width: 300px;">
+                                <h4 style="color: white;">Результат в браузере</h4>
+                                <div style="background-color: white; color: black; padding: 20px; border-radius: 5px;">
+                                    <div class="card" style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                                        <h3 style="margin-top: 0; color: #2c3e50;">Моя первая карточка</h3>
+                                        <p>Это пример того, как работает верстка.</p>
+                                        <button class="btn" id="demoButton" style="background: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Нажми меня</button>
+                                        <p id="demoMessage" style="margin-top: 10px; font-weight: bold;"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 40px;">
+                        <a href="tech.html" class="btn">Какие технологии используются?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Разработчик веб и мультимедийных приложений</h3>
+                    <p>Презентация профессии для школьников. Сайт создан для рассказа о профессии и возможностях обучения в КИТП ВЛГУ.</p>
+
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Разделы сайта</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="profession.html">О профессии</a></li>
+                        <li><a href="process.html">Процесс разработки</a></li>
+                        <li><a href="tech.html">Технологии</a></li>
+                        <li><a href="career.html">Карьера</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Полезные ресурсы</h3>
+                    <ul>
+                        <li><a href="quiz.html">Квиз по профессии</a></li>
+                        <li><a href="contact.html">Поступление в КИТП</a></li>
+                        <li><a href="https://vlsu.ru" target="_blank">Официальный сайт ВЛГУ</a></li>
+                        <li><a href="https://htmlacademy.ru" target="_blank">Бесплатные курсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Сайт про "Разработчика веб и мультимедийных приложений"</p>
+                <p>Все изображения взяты из открытых источников. Сайт создан для образовательных целей. Ссылки работают, а КОНТАКТЫ НЕ НАСТОЯЩИЕ!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Демо кнопка на странице процесса
+        document.getElementById('demoButton')?.addEventListener('click', function() {
+            document.getElementById('demoMessage').textContent = 'Отлично! Ты только что взаимодействовал с элементом, который создан с помощью HTML и CSS. Именно так работает веб-разработка!';
+            document.getElementById('demoMessage').style.color = '#2ecc71';
+            document.getElementById('demoMessage').style.fontWeight = 'bold';
+        });
+    </script>
+</body>
+</html>
